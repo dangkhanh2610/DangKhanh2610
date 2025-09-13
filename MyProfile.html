@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <!-- Các thẻ HTML thông dụng: 
+        1.h1 -> h6 - (heading)
+        2. p - (paragraph)
+        3. img - (image)    
+        4. a - (anchor)
+        5. ul, li - (ul: unordered list, li: list item)
+        6. table
+        7. input
+        8. button
+        9. div 
+    
+
+    -->
+
+    <!--Phần đầu--> 
+    <head>
+        <title>My Profile</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <style>
+            h3::before {
+                content: "\f0a4";
+                font-family: "Font Awesome 7 Free";
+                margin-right: 5px;
+                vertical-align:text-bottom;
+                font-style: normal;
+            }
+        </style>
+    </head>     
+
+    <!-- Phần thân -->
+    <body>
+        <div class="wrapper">
+            <h1>Hello I'm Lê Khánh Đăng <i class="fa-solid fa-mug-saucer" style="color: #96812d"></i><br>
+                <i class="fa-solid fa-code" style="color: #B197FC;"></i>A Web Developer <i class="fa-solid fa-bug" style="color: #d228be;"></i> <br> 
+                Welcome to my Personal Website!!! <i class="fa-regular fa-hand-spock" style="color: #d95909;"></i>
+            </h1>
+            <div class = "image"></div>
+            <h3>Here is more information about me:</h3>
+            <div class = "link">
+                <div class="button-container">
+                    <a class="btn fb" href="https://www.facebook.com/angkhanh.945871"><i class="fa-brands fa-facebook"></i>My Facebook</a> <br>
+                    <a class="btn tiktok" href="https://www.tiktok.com/@dawngkhanz2610"><i class="fa-brands fa-tiktok"></i>My TikTok</a> <br>
+                    <a class="btn github" href="https://github.com/dangkhanh2610"><i class="fa-brands fa-github"></i>My Github</a> <br>
+                    <a class="btn ins" href="https://www.instagram.com/dawng_khanz/"><i class="fa-brands fa-instagram"></i>My Instagram</a> <br>
+                    <a class="btn ytb" href="https://www.youtube.com/@dangkhanh1026"><i class="fa-brands fa-youtube"></i>My Youtube</a>
+                </div>
+            </div>
+            
+
+            <h3>Những ngôn ngữ lập trình đã học:</h3>
+            <div>
+                <ul>
+                    <li>
+                        <img style="margin-top: 5px; font-size: 25px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" width=24px">
+                        C/C++
+                    </li>
+                    <li>
+                        <img style="margin-top: 5px; font-size: 25px;" src="https://www.adm.ee/wordpress/wp-content/uploads/2023/08/JAVA-768x512.png" width="30px">
+                        Java
+                    </li>
+                    <li>
+                        <img style="margin-top: 5px; font-size: 25px;" src="https://ostraining.com/wp-content/uploads/coding/html5-css3-hd.jpg" width="30px">
+                        HTML/CSS</li>
+                    <li>
+                        <img style="margin-top: 5px; font-size: 25px;"src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" width="30px">
+                        Javascript</li>
+                </ul>
+            </div>
+            
+
+            <table>
+                <thead><!-- Phần đầu của bảng -->
+                    <th>Giai đoạn</th> <!--table heading-->
+                    <th>Tên trường</th>
+                    <th>Xếp loại</th>
+                </thead> 
+
+                <tbody><!-- Phần thân của bảng -->
+                    <tr> <!--table row-->
+                        <td>Cấp 1</td> <!--table data-->
+                        <td>Tiểu học Hiệp Tân</td>
+                        <td>Giỏi</td>
+                    </tr>
+                    <tr>
+                        <td>Cấp 2</td>
+                        <td>Trung học cơ sở Tân Thới Hòa</td>
+                        <td>Giỏi</td>
+                    </tr>
+                    <tr>
+                        <td>Cấp 3</td>
+                        <td>Trung học phổ thông Tây Thạnh</td>
+                        <td>Giỏi</td>
+                    </tr>
+                    <tr>
+                        <td>Đại học</td>
+                        <td>Trường đại học Sài Gòn</td>
+                        <td>Giỏi</td>
+                    </tr>
+                </tbody> 
+            </table>
+
+            <p>Thẻ input với type = "text"</p>
+            <input type="text">
+            <!-- Cùng 1 name nhưng kiểu checkbox thì có thể chọn tất cả, còn kiểu radio thì chỉ chọn 1
+            Nếu không đặt tên thì radio sẽ chọn được nhiều -->
+            <p>Thẻ input với type = "checkbox"</p>
+            <input name = "noname" type="checkbox">
+            <input name = "noname" type="checkbox">
+            <input name = "noname" type="checkbox">
+
+            <p>Thẻ input với type = "radio"</p>
+            <input name = "name1" type="radio">
+            <input name = "name1" type="radio">
+            <input name = "name1" type="radio">
+        </div>
+    </body>
+</html>
